@@ -13,10 +13,13 @@ public class PlayerController : MonoBehaviour
     Vector3 camPos;
     void Start()
     {
-        resWidth = Screen.currentResolution.width;
-        resHeight = Screen.currentResolution.height;
+        /* resWidth = Screen.currentResolution.width;
+        resHeight = Screen.currentResolution.height; */
+        resWidth = 1920;
+        resHeight = 1080;
+
         maxAxisX = 12.0f;
-        maxAxisY = 7.0f;
+        maxAxisY = 6.0f;
     }
 
     // Update is called once per frame
@@ -32,7 +35,7 @@ public class PlayerController : MonoBehaviour
           transform.position = new Vector3(
                 touch.position.x * maxAxisX / 1920f - (maxAxisX / 2),
                 transform.position.y,
-                touch.position.y * maxAxisY / 1080f - ((maxAxisY / 2 + transform.localScale.z))   );
+                touch.position.y * maxAxisY / 1080f - (maxAxisY / 2)    );
 
         }
     } 
