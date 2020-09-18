@@ -1,4 +1,2 @@
-Base path: '/home/joolean/Unity/Hub/Editor/2020.1.6f1/Editor/Data', plugins path '/home/joolean/Unity/Hub/Editor/2020.1.6f1/Editor/Data/PlaybackEngines'
+Base path: '/home/joolean/Unity/Hub/Editor/2019.4.10f1/Editor/Data', plugins path '/home/joolean/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-
-Quitting shader compiler process
