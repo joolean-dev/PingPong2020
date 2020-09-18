@@ -7,8 +7,8 @@ public class ReduceTableByTime : MonoBehaviour
     Vector3 minScale;
     public Vector3 maxScale;
     public bool repeatable;
-    public float speed = 3f;
-    public float duration = 3f;
+    public float speed = 2f;
+    public float duration = 5f;
 
     // Start is called before the first frame update
     IEnumerator Start ()
@@ -27,8 +27,12 @@ public class ReduceTableByTime : MonoBehaviour
     {
         float i = 0.0f;
         float rate = (1.0f / time) * speed;
-        transform.localScale = Vector3.Lerp(a, b, i);
-        yield return null;
+        while (i < 1.0f)
+        {
+            i += Time.deltaTime * rate;
+            transform.localScale = Vector3.Lerp(a, b, i);
+            yield return null;
+        }
     }
     
 }
