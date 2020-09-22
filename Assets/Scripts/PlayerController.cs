@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 0.1f;
+    //public float speed = 0.1f;
     private Rigidbody rb;
     //Sin uso de la función Start
     /* void Start()
@@ -33,8 +33,9 @@ public class PlayerController : MonoBehaviour
     } 
 
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("Otup el que lee");
         rb = other.attachedRigidbody;
 
-        rb.AddForce(-0.02f, 0.03f, 0);
+        rb.AddForce(-0.3f, 0.3f, 0);
     }
 }
