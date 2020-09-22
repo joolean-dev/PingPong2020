@@ -9,7 +9,6 @@ public class BotController : MonoBehaviour
 
     public GameObject table;
 
-    // float force = 13;
     Vector3 targetPosition;
 
     ShotManager shotManager;
