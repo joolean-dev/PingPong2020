@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43846714, g: 0.48655236, b: 0.5668254, a: 1}
+  m_IndirectSpecularColor: {r: 0.43846694, g: 0.4865523, b: 0.5668249, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,13 +200,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 71730656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad19a8fddea6a4677bcea7be66627719, type: 3}
+  m_Script: {fileID: 11500000, guid: a61f0dae1854d4e11a127a6f449d2dc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefabs:
-  - {fileID: 7624511930258371250, guid: ab7d5c6fff04143b5b49de7e9d3d7f1c, type: 3}
-  - {fileID: 5768057215584375359, guid: 1978b12e6e8a04af6840dd1ae5710f81, type: 3}
-  - {fileID: 427013300687753392, guid: 3241b2e4de7c544a48ad900b3cbd8d33, type: 3}
+  objectPrefabs:
+  - {fileID: 8150525990177985622, guid: 617f83b45149f41358ab13b686fdbf70, type: 3}
+  - {fileID: 8838410742374410787, guid: a9fec67ee6c1e49419cd492663a7e702, type: 3}
+  - {fileID: 937512352438402824, guid: 77a7ba199a71147c89c0a0ec3b99c2c7, type: 3}
 --- !u!1001 &193549098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -841,6 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b6e69f7c053655c833f9534ac82e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOver: 0
   validCourt: {fileID: 386288086}
   resWidth: 0
   resHeight: 0
