@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool gameOver; //Solo valido para condicion de spawnManager
     public GameObject validCourt;
     private Touch touch;
 
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
     Vector3 camPos;
     void Start()
     {
+        gameOver = true;
         /* resWidth = Screen.currentResolution.width;
         resHeight = Screen.currentResolution.height; */
         resWidth = 1920;
