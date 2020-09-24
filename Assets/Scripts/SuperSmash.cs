@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuperMash : MonoBehaviour
+public class SuperSmash : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
