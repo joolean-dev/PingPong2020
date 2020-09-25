@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         rb = other.attachedRigidbody;
 
         //rb.AddForce(-0.3f, 0.3f, 0);
-        AddForceAtAngle(-0.3f, 90f, rb);
+        //AddForceAtAngle(-0.3f, 90f, rb);
     }
 
     public void AddForceAtAngle(float force, float angle, Rigidbody rb)
