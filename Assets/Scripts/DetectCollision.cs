@@ -5,6 +5,8 @@ using UnityEngine;
 public class DetectCollision : MonoBehaviour
 {
     public Rigidbody rb;
+    //public Rigidbody ballRb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +16,20 @@ public class DetectCollision : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter (Collider other)
     {
+        // If Ball collides with either goal, destroy it
+        if (other.gameObject.name == "Ball")
+        {
+          switch (gameObject.tag)
+            {
+                case "Player Goal":
+                    Debug.Log("Pico en Player Goal");
+                    break;
+                case "Enemy Goal":
+                    Debug.Log("Pico en Enemy Goal");
+                    break;
+            }
+        }
+
         if (other.gameObject.tag == "Player") { 
         switch (gameObject.tag)
         {
@@ -29,5 +45,6 @@ public class DetectCollision : MonoBehaviour
                 break;
             }
         }
+        
     }
 }
