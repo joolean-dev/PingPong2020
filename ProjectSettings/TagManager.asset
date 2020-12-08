@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - minus2sec
+  - plus1sec
+  - Ball
+  - Player Goal
+  - Enemy Goal
   layers:
   - Default
   - TransparentFX
